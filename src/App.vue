@@ -1,12 +1,16 @@
 <template>
   <div id="app">
+    <h1>Melkers Webbpage</h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about/user">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+</script>
 
 <style>
 #app {
@@ -24,6 +28,8 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin-right: 0.5em;
+  text-align: center;
 }
 
 #nav a.router-link-exact-active {
